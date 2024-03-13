@@ -1,0 +1,29 @@
+{
+  "name": "online_tutoring_platform",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanhBb/Online_Tutoring_Platform.git"
+  },
+  "keywords": [
+    "final"
+  ],
+  "author": "Tuan Anh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanhBb/Online_Tutoring_Platform/issues"
+  },
+  "homepage": "https://github.com/TanhBb/Online_Tutoring_Platform#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
