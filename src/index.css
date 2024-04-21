@@ -1,0 +1,263 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  pre {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #242a30;
+  }
+  
+  .video-container {
+    flex: 1 1 40rem;
+    position: relative;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  .article .description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+  }
+  
+  .faculty .description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+  }
+  
+  /* .invalid-feedback {
+    display: block !important;
+  } */
+  
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .course-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .course-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .courses {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .chat-box {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .message-list {
+    padding: 10px 0;
+    height: 60vh;
+    overflow-y: auto;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-message {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  
+    .message {
+      background-color: #d9f2e6;
+    }
+  }
+  
+  .other-message {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  
+    .message {
+      background-color: #e2e2e2;
+    }
+  }
+  
+  .message {
+    background-color: #e2e2e2;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    clear: both;
+  }
+  .position-relative {
+    position: relative;
+  }
+  
+  .abt-img {
+    size: 30%;
+  }
+  .nav-column-links .nav-link {
+    color: #eeeeeed8;
+  }
+  
+  .img_H{
+    height: 100%;
+    width: 100%;
+  }
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .top-50 {
+    top: 50%;
+  }
+  
+  .start-50 {
+    left: 42%!important;
+  }
+  
+  .translate-middle {
+    transform: translate(-50%, -50%);
+  }
+  
+  .Card {
+    border: none !important;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fee-image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+/* Define custom color variables */
+:root {
+  --primary-color: rgb(106, 104, 104); /* Change this to your desired gray color */
+}
+
+/* Update text color */
+body {
+  color: var(--primary-color);
+}
+
+/* Update link color */
+a {
+  color: var(--primary-color);
+}
+
+/* Update background color */
+body {
+  background-color: #f8f9fa; /* This is a light gray background color, you can adjust it as needed */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.login-button,
+.sign-up-button {
+  width: 100%;
+  height: 100%;
+  border: 1;
+  border-color: #0b7077;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;;
+}
+
+.login-button {
+  background-color: #ffffff;
+}
+
+.login-button:hover {
+  background-color: #0b7077;
+  color: #ffffff;
+}
+.sign-up-button {
+  background-color:#0B7077;
+}
+
+.sign-up-button {
+  background-color: #0b7077;
+  color: #ffffff;
+  
+}
+.icon_train{
+  width: 120px;
+  height: 120px;
+}
+
+.join-teacher-button {
+  width: 180px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  border: 2; /* Remove border */
+  border-color: rgb(243, 245, 245);
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #f5f7f7;
+}
+
+.join-teacher-button:hover {
+  background-color: #0b7077;
+  color: #ffffff;
+}
+
+
