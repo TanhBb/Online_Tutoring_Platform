@@ -1,4 +1,3 @@
-import React from "react";
 import imgMain from "/image/homepage.png";
 import FullLayout from "../components/userLayout/Full";
 import SMath from "/image/SMath.jpg";
@@ -13,6 +12,7 @@ import Classimg from "/image/class.png";
 import train1 from "/image/train1.png";
 import train2 from "/image/train2.png";
 import train3 from "/image/train3.png";
+import React, { useState } from "react";
 
 import {
   Badge,
@@ -21,13 +21,86 @@ import {
   Col,
   Container,
   Image,
+  Modal,
   Row,
 } from "react-bootstrap";
 
 function HomePage() {
+  const [show, setShowModal] = useState(false);
+
+  const handleShow = () => {
+    setShowModal(!show);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
   return (
     <div className="App">
       <FullLayout>
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+          centered
+          size="lg"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title className="text-center">Booking Process</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <form action="">
+              <div className="mb-3">
+                <label>Learning Type</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Subject</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Tutor</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Starting Date</label>
+                <input
+                  type="datetime-local"
+                  id="meetingDate"
+                  name="meetingDate"
+                  className="form-control"
+                ></input>
+                <div className="invalid-feedback"></div>
+              </div>
+            </form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary">Booking</Button>
+          </Modal.Footer>
+        </Modal>
+
         <section className="position-relative">
           <div className="position-absolute top-50 start-50 translate-middle">
             <Container className="col-lg-10 mx-1 d-flex flex-column">
@@ -46,7 +119,12 @@ function HomePage() {
                     Never stop learning
                   </p>
                   <div className="d-grid gap-2 d-sm-flex mb-5">
-                    <Button variant="warning" size="lg" className="px-4 gap-3">
+                    <Button
+                      variant="warning"
+                      size="lg"
+                      className="px-4 gap-3"
+                      onClick={handleShow}
+                    >
                       Get Started
                     </Button>
                     <Button
@@ -131,7 +209,7 @@ function HomePage() {
                       <p>
                         The section now emphasizes the flexibility in study
                         hours, highlighting the ability for users to access
-                        resources and support at their convenience. 
+                        resources and support at their convenience.
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -220,7 +298,7 @@ function HomePage() {
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={SMath} />
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Math</Card.Title>
                     <Card.Text>
                       Some quick example text to build on the card title and
                       make.
@@ -233,7 +311,7 @@ function HomePage() {
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={SCien} />
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Science</Card.Title>
                     <Card.Text>
                       Some quick example text to build on the card title and
                       make.
@@ -246,7 +324,7 @@ function HomePage() {
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={SEng} />
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>English</Card.Title>
                     <Card.Text>
                       Some quick example text to build on the card title and
                       make.
@@ -259,7 +337,7 @@ function HomePage() {
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={SHis} />
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>History</Card.Title>
                     <Card.Text>
                       Some quick example text to build on the card title and
                       make.
