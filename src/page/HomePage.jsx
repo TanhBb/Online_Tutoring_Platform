@@ -8,6 +8,7 @@ import SHis from "/image/SHis.png";
 import Fee1 from "/image/fee1.png";
 import Fee2 from "/image/fee2.png";
 import Fee3 from "/image/fee3.png";
+import Fee4 from "/image/fee4.png";
 import Classimg from "/image/class.png";
 import train1 from "/image/train1.png";
 import train2 from "/image/train2.png";
@@ -114,23 +115,23 @@ function HomePage() {
                   <Card.Body>
                     <Card.Title className="mb-4"></Card.Title>
                     <Card.Text style={{ textAlign: "center" }}>
-                      <div className="image-container">
+                      <div className="image-container mb-4">
                         <Card.Img
                           variant="top"
-                          src={Fee2}
-                          className="fee-image"
+                          src={Fee4}
+                          className="fee-image smaller-image" // Added smaller-image class
                         />
                       </div>
 
                       <h5 className="fw-bold">
                         <span style={{ color: "#2F327D" }}>
-                          Easy Scheduling & Attendance Tracking
+                          More Flexibility in Study Hours
                         </span>
                       </h5>
                       <p>
-                        Schedule and reserve classrooms at one campus or
-                        multiple campuses. Keep detailed records of student
-                        attendance
+                        The section now emphasizes the flexibility in study
+                        hours, highlighting the ability for users to access
+                        resources and support at their convenience. 
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -302,7 +303,7 @@ function HomePage() {
         </section>
 
         <section className=" staff-training">
-          <Container className="mb-5 py-5 align-items-center justify-content-center">
+          <Container className="mb-5 align-items-center justify-content-center">
             <Row className="mb-5 py-5">
               <h2 className="fw-bold mb-5 py-2 text-center ">Staff training</h2>
               <Col>

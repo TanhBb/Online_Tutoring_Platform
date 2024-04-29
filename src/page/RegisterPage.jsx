@@ -217,33 +217,40 @@ function RegisterPage() {
                         </Form.Control.Feedback>
                       </Form.Group>
 
-                      <Form.Group className="mb-3">
-                        <Form.Label>First Name</Form.Label>
-                        <Form.Control
-                          type="firstName"
-                          name="firstName"
-                          // value={formData.firstName}
-                          // onChange={handleChange}
-                          // isInvalid={error.firstName}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {/* {error.firstName} */}
-                        </Form.Control.Feedback>
-                      </Form.Group>
-
-                      <Form.Group className="mb-3">
-                        <Form.Label>Last Name</Form.Label>
-                        <Form.Control
-                          type="lastName"
-                          name="lastName"
-                          // value={formData.lastName}
-                          // onChange={handleChange}
-                          // isInvalid={error.lastName}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {/* {error.lastName} */}
-                        </Form.Control.Feedback>
-                      </Form.Group>
+                      <Form>
+                        <Row className="mb-3">
+                          <Col>
+                            <Form.Group className="mb-3">
+                              <Form.Label>First Name</Form.Label>
+                              <Form.Control
+                                type="firstName"
+                                name="firstName"
+                                // value={formData.firstName}
+                                // onChange={handleChange}
+                                // isInvalid={error.firstName}
+                              />
+                              <Form.Control.Feedback type="invalid">
+                                {/* {error.firstName} */}
+                              </Form.Control.Feedback>
+                            </Form.Group>
+                          </Col>
+                          <Col>
+                            <Form.Group className="mb-3">
+                              <Form.Label>Last Name</Form.Label>
+                              <Form.Control
+                                type="lastName"
+                                name="lastName"
+                                // value={formData.lastName}
+                                // onChange={handleChange}
+                                // isInvalid={error.lastName}
+                              />
+                              <Form.Control.Feedback type="invalid">
+                                {/* {error.lastName} */}
+                              </Form.Control.Feedback>
+                            </Form.Group>
+                          </Col>
+                        </Row>
+                      </Form>
 
                       <Form.Group className="mb-3">
                         <Form.Label>Date of Birth</Form.Label>
@@ -259,34 +266,6 @@ function RegisterPage() {
                         </Form.Control.Feedback>
                       </Form.Group>
 
-                      <Form.Group className="mb-3">
-                        <Form.Label>Phone Number</Form.Label>
-                        <Form.Control
-                          type="text"
-                          name="phoneNumber"
-                          // value={formData.phoneNumber}
-                          // onChange={handleChange}
-                          // isInvalid={error.phoneNumber}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {/* {error.phoneNumber} */}
-                        </Form.Control.Feedback>
-                      </Form.Group>
-
-                      <Form.Group className="mb-3">
-                        <Form.Label>Address</Form.Label>
-                        <Form.Control
-                          as="textarea"
-                          name="address"
-                          // value={formData.address}
-                          // onChange={handleChange}
-                          // isInvalid={error.address}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {/* {error.address} */}
-                        </Form.Control.Feedback>
-                      </Form.Group>
-
                       <Form.Check className="mb-3">
                         <Form.Check.Input
                           type="checkbox"
@@ -295,27 +274,30 @@ function RegisterPage() {
                           // isInvalid={error.termAndCondition}
                         />
                         <Form.Check.Label>
-                          I agree to the conditions and regulations of
-                          UniMagContributions
+                          I agree to the conditions and regulations of Bb Center
                         </Form.Check.Label>
                         <Form.Control.Feedback type="invalid">
                           {/* {error.termAndCondition} */}
                         </Form.Control.Feedback>
                       </Form.Check>
 
-                      {/* <div className="d-grid">
+                      <div className="d-grid">
                         <Button
-                          variant="warning"
                           type="submit"
-                          disabled={isLoading}
+                          style={{
+                            backgroundColor: "#0B7077",
+                            borderColor: "#0B7077",
+                          }}
+                          // disabled={isLoading}
                         >
-                          {isLoading ? (
-                            <Spinner animation="border" variant="dark" />
-                          ) : (
-                            "Sign up"
-                          )}
+                          {/* {isLoading ? (
+                          <Spinner animation="border" variant="dark" />
+                        ) : (
+                          "Login"
+                        )} */}
+                          Register{" "}
                         </Button>
-                      </div> */}
+                      </div>
                     </Form>
                     <div className="mt-3 text-center">
                       <div className="border-1">

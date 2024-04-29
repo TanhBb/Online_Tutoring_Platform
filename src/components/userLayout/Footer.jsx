@@ -24,12 +24,12 @@ const Footer = () => {
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light ">
                   <i className="bi bi-envelope-fill"></i>{" "}
-                  text-whitenq2508h@gre.ac.uk
+                  na8220o@gre.ac.uk
                 </Link>
               </li>
               <li className="nav-item mb-2 ">
                 <Link to="#" className="nav-link p-0 text-light">
-                  <i className="bi bi-telephone-fill"></i> +84 916 843 367
+                  <i className="bi bi-telephone-fill"></i> +84 704 725 944
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -46,12 +46,12 @@ const Footer = () => {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="/article" className="nav-link p-0 text-light">
-                  Article
+                  About us
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="/submission" className="nav-link p-0 text-light">
-                  Submission
+                  Register
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -63,26 +63,26 @@ const Footer = () => {
           </Col>
 
           <Col sm={12} md={4} lg={2} className="mb-3">
-            <h5 className="fw-bold text-light">About Us</h5>
+            <h5 className="fw-bold text-light">Subjects</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Platform
+                  English
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Mission
+                  Math
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Vision
+                Literature
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Join Us
+                Physics
                 </Link>
               </li>
             </ul>
@@ -128,7 +128,7 @@ const Footer = () => {
           </Col>
         </Row>
         <p className="text-center text-body-secondary mb-0 pb-4">
-          © 2024 Unimang Contributions, Inc
+          © 2024 Bb Center, Inc
         </p>
       </Container>
     </footer>

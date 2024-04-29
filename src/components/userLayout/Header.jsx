@@ -67,7 +67,7 @@ const Header = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                  Unimang Contributions
+                  Bb Center
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
