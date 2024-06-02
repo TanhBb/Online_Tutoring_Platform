@@ -16,8 +16,6 @@ import MyBookingPage from "./page/MyBookingPage.jsx";
 import ScheduleTrackingPage from "./page/ScheduleTrackingPage.jsx";
 import AdminProtectedPage from "./components/userLayout/AdminProtected.jsx";
 import TeacherProtectedPage from "./components/userLayout/TeacherProtected.jsx";
-import ManagerProtectedPage from "./components/userLayout/ManagerProtected.jsx";
-import StudentProtectedPage from "./components/userLayout/StudentProtected.jsx";
 
 function App() {
   const router = useRoutes([
@@ -39,54 +37,30 @@ function App() {
     },
     {
       path: "profile",
-      element: (
-        <StudentProtectedPage>
-          <ProfilePage />
-        </StudentProtectedPage>
-      ),
+      element: <ProfilePage />,
     },
     {
       path: "myBooking",
-      element: (
-        <StudentProtectedPage>
-          <MyBookingPage />
-        </StudentProtectedPage>
-      ),
+      element: <MyBookingPage />,
     },
     {
       path: "/manager",
       children: [
         {
           path: "subjectManagement",
-          element: (
-            <ManagerProtectedPage>
-              <SubjectManagementPage />
-            </ManagerProtectedPage>
-          ),
+          element: <SubjectManagementPage />,
         },
         {
           path: "classRoomManagement",
-          element: (
-            <ManagerProtectedPage>
-              <ClassRoomManagementPage />
-            </ManagerProtectedPage>
-          ),
+          element: <ClassRoomManagementPage />,
         },
         {
           path: "slotManagement",
-          element: (
-            <ManagerProtectedPage>
-              <SlotManagementPage />
-            </ManagerProtectedPage>
-          ),
+          element: <SlotManagementPage />,
         },
         {
           path: "userManagement",
-          element: (
-            <ManagerProtectedPage>
-              <UserManagementPage />
-            </ManagerProtectedPage>
-          ),
+          element: <UserManagementPage />,
         },
       ],
     },

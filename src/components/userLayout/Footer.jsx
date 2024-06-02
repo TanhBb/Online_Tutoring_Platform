@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React from "react";
 // import UniLogo from "/image/logo.png";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
@@ -23,13 +24,12 @@ const Footer = () => {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light ">
-                  <i className="bi bi-envelope-fill"></i>{" "}
-                  text-whitenq2508h@gre.ac.uk
+                  <i className="bi bi-envelope-fill"></i> na8220o@gre.ac.uk
                 </Link>
               </li>
               <li className="nav-item mb-2 ">
                 <Link to="#" className="nav-link p-0 text-light">
-                  <i className="bi bi-telephone-fill"></i> +84 916 843 367
+                  <i className="bi bi-telephone-fill"></i> +84 704 725 944
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -46,12 +46,12 @@ const Footer = () => {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="/article" className="nav-link p-0 text-light">
-                  Article
+                  About us
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="/submission" className="nav-link p-0 text-light">
-                  Submission
+                  Register
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -63,26 +63,26 @@ const Footer = () => {
           </Col>
 
           <Col sm={12} md={4} lg={2} className="mb-3">
-            <h5 className="fw-bold text-light">About Us</h5>
+            <h5 className="fw-bold text-light">Subjects</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Platform
+                  English
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Mission
+                  Math
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Our Vision
+                  Literature
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-light">
-                  Join Us
+                  Physics
                 </Link>
               </li>
             </ul>
@@ -94,20 +94,15 @@ const Footer = () => {
               <li className="nav-item me-2">
                 <Link
                   target="_blank"
-                  to="https://www.facebook.com/ndquang093/"
-                  className="nav-link p-0 text-light"
-                >
+                  to="https://www.facebook.com/tanh.bb"
+                  className="nav-link p-0 text-light">
                   <Button variant="light">
                     <i className="bi bi-facebook"></i>
                   </Button>
                 </Link>
               </li>
               <li className="nav-item me-2">
-                <Link
-                  target="_blank"
-                  to="https://github.com/Three-Tiger"
-                  className="nav-link p-0 text-light"
-                >
+                <Link target="_blank" to="" className="nav-link p-0 text-light">
                   <Button variant="light">
                     <i className="bi bi-github"></i>
                   </Button>
@@ -117,8 +112,7 @@ const Footer = () => {
                 <Link
                   target="_blank"
                   to="https://www.linkedin.com/in/nguyen-duy-quang/"
-                  className="nav-link p-0 text-light"
-                >
+                  className="nav-link p-0 text-light">
                   <Button variant="light">
                     <i className="bi bi-linkedin"></i>
                   </Button>
@@ -128,7 +122,7 @@ const Footer = () => {
           </Col>
         </Row>
         <p className="text-center text-body-secondary mb-0 pb-4">
-          © 2024 Unimang Contributions, Inc
+          © 2024 Bb Center, Inc
         </p>
       </Container>
     </footer>

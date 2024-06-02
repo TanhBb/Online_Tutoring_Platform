@@ -18,6 +18,7 @@ import {
   Image,
   Row,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   return (
@@ -71,8 +72,7 @@ function AboutPage() {
                   <Col
                     md={6}
                     lg={6}
-                    className="position-relative text-center mb-5"
-                  >
+                    className="position-relative text-center mb-5">
                     {/* Image */}
                     <img
                       style={{ height: "300px", width: "450px" }}
@@ -84,8 +84,7 @@ function AboutPage() {
                     {/* Text */}
                     <Col
                       md={12}
-                      className="position-absolute top-50 start-50 translate-middle ms-5"
-                    >
+                      className="position-absolute top-50 start-50 translate-middle ms-5">
                       <h5 className="fw-bold text-center mb-5">
                         <span style={{ color: "#ffffff" }}>
                           FOR INSTRUCTORS
@@ -102,8 +101,7 @@ function AboutPage() {
                   <Col
                     md={6}
                     lg={6}
-                    className="position-relative text-center mb-5"
-                  >
+                    className="position-relative text-center mb-5">
                     {/* Image */}
                     <img
                       style={{ height: "300px", width: "450px" }}
@@ -115,16 +113,18 @@ function AboutPage() {
                     {/* Text */}
                     <Col
                       md={12}
-                      className="position-absolute top-50 start-50 translate-middle ms-5"
-                    >
+                      className="position-absolute top-50 start-50 translate-middle ms-5">
                       <h5 className="fw-bold text-center mb-5">
                         <span style={{ color: "#ffffff" }}>FOR STUDENTS</span>
                       </h5>
 
                       {/* Button */}
-                      <Button variant="" className="join-teacher-button">
-                        Join Now
-                      </Button>
+
+                      <Link to="/login">
+                        <Button variant="" className="join-teacher-button">
+                          Join Now
+                        </Button>
+                      </Link>
                     </Col>
                   </Col>
                 </Row>
@@ -227,9 +227,11 @@ function AboutPage() {
 
             <Row className="justify-content-center">
               <Col xs="auto" className="">
-                <Button variant="outline-warning" size="lg">
-                  Get Started
-                </Button>
+                <Link to="/">
+                  <Button variant="outline-warning" size="lg">
+                    Get Started
+                  </Button>
+                </Link>
               </Col>
             </Row>
           </Col>
