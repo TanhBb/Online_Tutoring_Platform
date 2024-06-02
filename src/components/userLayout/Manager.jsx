@@ -2,7 +2,11 @@ import { Link, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import SideBar from "./SidebarManager";
 import "./Admin.css";
+<<<<<<< HEAD
 import HeaderManagement from "./JustHeader";
+=======
+import Header from "./JustHeader";
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
 
 const ManagerLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -36,7 +40,11 @@ const ManagerLayout = ({ children }) => {
     setIsSidebarOpen(!isSidebarOpen);
   };
   return (
+<<<<<<< HEAD
     <HeaderManagement>
+=======
+    <Header>
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
       {isSidebarOpen && <SideBar />}
       <main
         id="main"
@@ -44,7 +52,11 @@ const ManagerLayout = ({ children }) => {
       >
         {children}
       </main>
+<<<<<<< HEAD
     </HeaderManagement>
+=======
+    </Header>
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
   );
 };
 

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 // import UniLogo from "/image/logo.png";
 import { Button, Col, Container, Row } from "react-bootstrap";
 

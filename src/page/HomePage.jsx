@@ -12,6 +12,7 @@ import Classimg from "/image/class.png";
 import train1 from "/image/train1.png";
 import train2 from "/image/train2.png";
 import train3 from "/image/train3.png";
+<<<<<<< HEAD
 import { Button, Card, Col, Container, Modal, Row } from "react-bootstrap";
 
 import { useState, useEffect } from "react";
@@ -208,6 +209,31 @@ const HomePage = () => {
     }
   }, [formData, formData.centerId, formData.subjectId, teachers]);
 
+=======
+import React, { useState } from "react";
+
+import {
+  Badge,
+  Button,
+  Card,
+  Col,
+  Container,
+  Image,
+  Modal,
+  Row,
+} from "react-bootstrap";
+
+function HomePage() {
+  const [show, setShowModal] = useState(false);
+
+  const handleShow = () => {
+    setShowModal(!show);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
   return (
     <div className="App">
       <FullLayout>
@@ -217,11 +243,17 @@ const HomePage = () => {
           backdrop="static"
           keyboard={false}
           centered
+<<<<<<< HEAD
           size="lg">
+=======
+          size="lg"
+        >
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
           <Modal.Header closeButton>
             <Modal.Title className="text-center">Booking Process</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+<<<<<<< HEAD
             <form onSubmit={handleSubmit}>
               <Modal.Body>
                 <div className="mb-3">
@@ -339,6 +371,57 @@ const HomePage = () => {
               </Modal.Footer>
             </form>
           </Modal.Body>
+=======
+            <form action="">
+              <div className="mb-3">
+                <label>Learning Type</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Subject</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Tutor</label>
+                <select type="email" name="email" className="form-control">
+                  <option value="option1">--- No Selected ---</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+                <div className="invalid-feedback"></div>
+              </div>
+              <div className="mb-3">
+                <label>Starting Date</label>
+                <input
+                  type="datetime-local"
+                  id="meetingDate"
+                  name="meetingDate"
+                  className="form-control"
+                ></input>
+                <div className="invalid-feedback"></div>
+              </div>
+            </form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary">Booking</Button>
+          </Modal.Footer>
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
         </Modal>
 
         <section className="position-relative">
@@ -361,7 +444,12 @@ const HomePage = () => {
                       variant="warning"
                       size="lg"
                       className="px-4 gap-3"
+<<<<<<< HEAD
                       onClick={handleShow}>
+=======
+                      onClick={handleShow}
+                    >
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
                       Get Started
                     </Button>
                     <Link to="/about">

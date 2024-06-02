@@ -167,6 +167,7 @@ function Register() {
                             onChange={handleChange}
                             isInvalid={!!errors.firstName}
                           />
+<<<<<<< HEAD
                           <Form.Control.Feedback type="invalid">
                             {errors.firstName}
                           </Form.Control.Feedback>
@@ -187,6 +188,92 @@ function Register() {
                           </Form.Control.Feedback>
                         </Form.Group>
                       </Col>
+=======
+                        </Form.Label>
+                        <Form.Control
+                          type="file"
+                          name="profilePicture"
+                          accept="image/*"
+                          // onChange={handleImageChange}
+                        />
+                      </Form.Group>
+
+                      <Form.Group className="mb-3">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control
+                          type="email"
+                          name="email"
+                          // value={formData.email}
+                          // onChange={handleChange}
+                          // isInvalid={error.email}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          {/* {error.email} */}
+                        </Form.Control.Feedback>
+                      </Form.Group>
+
+                      <Form.Group className="mb-3">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control
+                          type="password"
+                          name="password"
+                          // value={formData.password}
+                          // onChange={handleChange}
+                          // isInvalid={error.password}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          {/* {error.password} */}
+                        </Form.Control.Feedback>
+                      </Form.Group>
+
+                      <Form.Group className="mb-3">
+                        <Form.Label>Confirm Password</Form.Label>
+                        <Form.Control
+                          type="password"
+                          name="confirmPassword"
+                          // onChange={handleChange}
+                          // isInvalid={error.confirmPassword}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          {/* {error.confirmPassword} */}
+                        </Form.Control.Feedback>
+                      </Form.Group>
+
+                      <Form>
+                        <Row className="mb-3">
+                          <Col>
+                            <Form.Group className="mb-3">
+                              <Form.Label>First Name</Form.Label>
+                              <Form.Control
+                                type="firstName"
+                                name="firstName"
+                                // value={formData.firstName}
+                                // onChange={handleChange}
+                                // isInvalid={error.firstName}
+                              />
+                              <Form.Control.Feedback type="invalid">
+                                {/* {error.firstName} */}
+                              </Form.Control.Feedback>
+                            </Form.Group>
+                          </Col>
+                          <Col>
+                            <Form.Group className="mb-3">
+                              <Form.Label>Last Name</Form.Label>
+                              <Form.Control
+                                type="lastName"
+                                name="lastName"
+                                // value={formData.lastName}
+                                // onChange={handleChange}
+                                // isInvalid={error.lastName}
+                              />
+                              <Form.Control.Feedback type="invalid">
+                                {/* {error.lastName} */}
+                              </Form.Control.Feedback>
+                            </Form.Group>
+                          </Col>
+                        </Row>
+                      </Form>
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
 
                       <Form.Group className="mb-3">
                         <Form.Label>Date of Birth</Form.Label>
@@ -202,6 +289,7 @@ function Register() {
                         </Form.Control.Feedback>
                       </Form.Group>
 
+<<<<<<< HEAD
                       <Form.Group className="mb-3">
                         <Form.Label>Phone Number</Form.Label>
                         <Form.Control
@@ -247,6 +335,45 @@ function Register() {
                           "Sign up"
                         )}
                       </Button>
+=======
+                      <Form.Check className="mb-3">
+                        <Form.Check.Input
+                          type="checkbox"
+                          name="termAndCondition"
+                          // onChange={handleCheckboxChange}
+                          // isInvalid={error.termAndCondition}
+                        />
+                        <Form.Check.Label>
+                          I agree to the conditions and regulations of Bb Center
+                        </Form.Check.Label>
+                        <Form.Control.Feedback type="invalid">
+                          {/* {error.termAndCondition} */}
+                        </Form.Control.Feedback>
+                      </Form.Check>
+
+                      <div className="d-grid">
+                        <Button
+                          type="submit"
+                          style={{
+                            backgroundColor: "#0B7077",
+                            borderColor: "#0B7077",
+                          }}
+                          // disabled={isLoading}
+                        >
+                          {/* {isLoading ? (
+                          <Spinner animation="border" variant="dark" />
+                        ) : (
+                          "Login"
+                        )} */}
+                          Register{" "}
+                        </Button>
+                      </div>
+                    </Form>
+                    <div className="mt-3 text-center">
+                      <div className="border-1">
+                        Don’t have an account? <Link to="/login">Login</Link>
+                      </div>
+>>>>>>> 7aa35482dbe4e491fdbad76ce50bd630a9623083
                     </div>
                   </Form>
                   <div className="mt-3 text-center">
