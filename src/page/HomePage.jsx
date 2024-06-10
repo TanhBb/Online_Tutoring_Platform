@@ -342,21 +342,21 @@ const HomePage = () => {
         </Modal>
 
         <section className="position-relative">
-          <div className="position-absolute top-50 start-50 translate-middle">
-            <Container className="col-lg-10 mx-1 d-flex flex-column">
-              <Row className="align-items-end mb-5">
-                <Col sm={8}>
+          <div className="content-overlay position-absolute">
+            <Container className="align-items-end mb-5 justify-content-center">
+              <Row className="align-items-center">
+                <Col ms={8}>
                   <h2
-                    className="fw-bold mx-1"
+                    className="fw-bold"
                     style={{ color: "#0B7077", fontSize: "52px" }}>
                     Grow up your skills by online courses with Onlearning
                   </h2>
                   <p
-                    className="lead mb-4 mx-1"
-                    style={{ color: "#0B7077", fontSize: "23px" }}>
+                    className="lead mb-4"
+                    style={{ color: "#0B7077", fontSize: "32px" }}>
                     Never stop learning
                   </p>
-                  <div className="d-grid gap-2 d-sm-flex mb-5">
+                  <div className="d-grid gap-2 d-sm-flex justify-content-center justify-content-md-start mb-5">
                     <Button
                       variant="warning"
                       size="lg"
